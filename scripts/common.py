@@ -86,12 +86,28 @@ def media_info(path) -> dict:
         except (ValueError, ZeroDivisionError):
             fps = 0.0
 
+    # Rotacion: los videos de iPhone se graban 1920x1080 con una matriz de giro de
+    # -90 grados. FFmpeg los endereza solo al decodificar, asi que las dimensiones
+    # utiles son las giradas, no las del contenedor.
+    rot = 0
+    if v:
+        for sd in v.get("side_data_list") or []:
+            if "rotation" in sd:
+                rot = int(float(sd["rotation"]))
+        if not rot and (v.get("tags") or {}).get("rotate"):
+            rot = int(float(v["tags"]["rotate"]))
+    ancho = int((v or {}).get("width") or 0)
+    alto = int((v or {}).get("height") or 0)
+    if abs(rot) % 180 == 90:
+        ancho, alto = alto, ancho
+
     return {
         "path": str(p.resolve()),
         "duration": float(fmt.get("duration") or (v or {}).get("duration") or 0.0),
         "size": int(fmt.get("size") or p.stat().st_size),
-        "width": int((v or {}).get("width") or 0),
-        "height": int((v or {}).get("height") or 0),
+        "width": ancho,
+        "height": alto,
+        "rotation": rot,
         "fps": round(fps, 3),
         "vcodec": (v or {}).get("codec_name"),
         "acodec": (a or {}).get("codec_name"),

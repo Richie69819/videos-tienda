@@ -52,6 +52,10 @@ def main():
     ap.add_argument("--logo", help="PNG con transparencia, esquina superior")
     ap.add_argument("--musica", help="pista de fondo bajo la voz")
     ap.add_argument("--volumen-musica", type=float, default=0.12)
+    ap.add_argument("--audio", default="original", choices=["original", "limpio", "mudo"],
+                    help="limpio = quita zumbido de cuarto antes de normalizar")
+    ap.add_argument("--nivel-audio", type=float, default=-14,
+                    help="LUFS objetivo; -18 o -20 para ambiente grabado de lejos")
     ap.add_argument("--velocidad", type=float, default=1.0, help="1.05-1.15 acelera un poco (retiene mas)")
     ap.add_argument("--sin-subtitulos", action="store_true")
     ap.add_argument("--cpu", action="store_true")
@@ -113,24 +117,28 @@ def main():
             entradas += ["-f", "lavfi", "-t", "0.1", "-i", "anullsrc=r=44100:cl=stereo"]
         entradas += ["-loop", "1", "-i", args.logo]
 
+    norm = f"loudnorm=I={args.nivel_audio}:TP=-1:LRA=11"
+    # El material grabado con celular a lo lejos viene muy bajo; subirlo a -14 LUFS
+    # tambien sube el ruido de cuarto. 'limpio' recorta graves y aplica denoise antes.
+    limpieza = "highpass=f=100,afftdn=nf=-25," if args.audio == "limpio" else ""
+
     mapa_audio, filtro_audio = None, None
-    if info["has_audio"]:
+    usa_original = info["has_audio"] and args.audio != "mudo"
+    if usa_original:
         base = "[0:a]"
+        base_f = ""
         if args.velocidad != 1.0:
             base_f = f"{base}atempo={args.velocidad}[a0];"
             base = "[a0]"
-        else:
-            base_f = ""
         if idx_musica is not None:
             filtro_audio = (f"{base_f}[{idx_musica}:a]volume={args.volumen_musica}[mus];"
-                            f"{base}[mus]amix=inputs=2:duration=first:dropout_transition=0,"
-                            f"loudnorm=I=-14:TP=-1:LRA=11[aout]")
+                            f"{base}{limpieza}anull[voz];[voz][mus]"
+                            f"amix=inputs=2:duration=first:dropout_transition=0,{norm}[aout]")
         else:
-            filtro_audio = f"{base_f}{base}loudnorm=I=-14:TP=-1:LRA=11[aout]"
+            filtro_audio = f"{base_f}{base}{limpieza}{norm}[aout]"
         mapa_audio = "[aout]"
     elif idx_musica is not None:
-        filtro_audio = (f"[{idx_musica}:a]volume={args.volumen_musica * 3},"
-                        f"loudnorm=I=-14:TP=-1:LRA=11[aout]")
+        filtro_audio = f"[{idx_musica}:a]volume={args.volumen_musica * 3},{norm}[aout]"
         mapa_audio = "[aout]"
 
     cadena = ";".join(partes + ([filtro_audio] if filtro_audio else []))

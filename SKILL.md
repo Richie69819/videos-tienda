@@ -47,9 +47,10 @@ y dilo: sin eso no hay nada que hacer.
 
 | Material que trae el usuario | Flujo | Script principal |
 |---|---|---|
-| Video largo (podcast, live, explicacion de 10-60 min) | **A. Cortes** | `render_clip.py` tras analizar |
-| Clip corto ya grabado (timelapse, el gato usando el producto) | **B. Clip** | `render_clip.py` directo |
-| Solo fotos de producto | **C. Fotos** | `slideshow.py` |
+| Video largo **con voz** (podcast, live, explicacion) | **A. Cortes por transcripcion** | `transcribe.py` → `render_clip.py` |
+| Grabaciones **sin voz** (el gato jugando, la pieza en la mano, timelapse) | **B. Cortes por imagen** | `momentos.py` → `render_clip.py` |
+| Clip corto ya listo | **C. Clip directo** | `render_clip.py` |
+| Solo fotos de producto | **D. Fotos** | `slideshow.py` |
 
 Si no queda claro, pregunta con AskUserQuestion antes de procesar nada.
 
@@ -104,7 +105,34 @@ python "<SKILL>/scripts/render_clip.py" --input "<video>" --desde 262 --hasta 30
 
 ---
 
-## Flujo B — clip corto ya grabado
+## Flujo B — muchos clips de material sin voz
+
+Es el caso normal de una tienda: grabaciones de la mascota usando el producto o de la
+pieza girando en la mano, sin locucion. Aqui no hay transcripcion que analizar, asi que
+los momentos se eligen por **imagen**.
+
+### 1. Detectar momentos
+```
+python "<SKILL>/scripts/momentos.py" "<video>" --n 5 --duracion 8 --modo gato --hojas --output momentos.json
+```
+
+- `--modo gato` pesa el movimiento: zarpazo, salto, persecucion.
+- `--modo producto` pesa la nitidez: la pieza quieta y enfocada en la mano.
+- `--modo quieto` para plano fijo de producto.
+- `--hojas` genera una tira de 4 fotogramas por candidato.
+
+### 2. Revisar las tiras con tus propios ojos
+**Lee las tiras que genero `--hojas` antes de renderizar.** El detector mide movimiento
+y nitidez, no entiende la escena: puede proponer un tramo donde el producto ya salio de
+cuadro o donde solo se ve el fondo. Descarta esos y quedate con los buenos.
+
+### 3. Renderizar el lote
+Un `render_clip.py` por momento aprobado, variando el gancho en cada uno para poder
+comparar que angulo retiene mejor.
+
+### 4. Exportar y validar (ver "Cierre")
+
+## Flujo C — clip corto ya grabado
 
 Un solo comando. Si el clip no tiene voz, usa `--sin-subtitulos` y apoyate en el gancho,
 los textos y la musica.
@@ -117,8 +145,9 @@ Opciones que importan:
 - `--contenido persona|producto|pantalla` decide el reencuadre (rostro, fondo desenfocado, banda de marca). `auto` lo detecta solo.
 - `--centro 0.0-1.0` corrige a mano si el reencuadre automatico corta mal el producto.
 - `--velocidad 1.08` acelera un poco: retiene mas en TikTok sin que se note.
+- `--audio limpio --nivel-audio -18` para grabaciones de celular a distancia: el audio crudo viene muy bajo (-40 dB) y normalizarlo a -14 sube el zumbido del cuarto. `limpio` recorta graves y aplica denoise antes de normalizar. `--audio mudo` si vas a poner musica encima.
 
-## Flujo C — fotos de producto a video
+## Flujo D — fotos de producto a video
 
 ```
 python "<SKILL>/scripts/slideshow.py" --imagenes "carpeta-fotos" --out "reel.mp4" --segundos 2.6 --estilo michilab --textos "Anillo dona||PETG resistente||Envio gratis" --gancho "Tu gato ya tiene|donde rascarse" --cta "michilab.store" --musica "pista.mp3"
@@ -150,7 +179,7 @@ Cierra con una tabla de archivos y una propuesta de copy + hashtags para publica
 ## Reglas
 
 1. **Preflight siempre**, antes de procesar.
-2. **Aprobacion antes de renderizar** en el flujo A. En B y C basta con describir que vas a hacer.
+2. **Aprobacion antes de renderizar** en los flujos A y B (los que eligen que cortar). En C y D basta con describir que vas a hacer.
 3. **Gancho en los primeros 3 segundos, siempre.** Sin gancho el video no retiene.
 4. **El gancho no repite lo que se escucha**, lo complementa.
 5. **Nada de social proof inventado** (ventas, clientes felices, testimonios). Regla de marca.

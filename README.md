@@ -99,6 +99,7 @@ scripts/
   preflight.py            chequeo de entorno y del archivo
   transcribe.py           faster-whisper con tiempos por palabra
   snap.py                 corta en frontera de frase, no a media palabra
+  momentos.py             elige momentos por movimiento y nitidez (material sin voz)
   make_ass.py             motor de subtitulos animados
   reframe.py              decide el reencuadre 9:16
   render_clip.py          render de un clip vertical
