@@ -1,0 +1,12 @@
+# Todo esto es OPCIONAL: el flujo de fotos y el render con subtitulos manuales
+# funcionan solo con FFmpeg y la libreria estandar de Python.
+
+# Subtitulos automaticos desde el audio (flujo A y B con voz)
+faster-whisper>=1.0.0
+
+# Reencuadre por densidad de detalle (ya suelen venir instalados)
+numpy>=1.24
+pillow>=10.0
+
+# Reencuadre siguiendo rostros (mejora crop en video de personas o del gato)
+opencv-python>=4.8

@@ -1,0 +1,24 @@
+# Salidas y temporales
+videos/
+renders/
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.ass
+transcript*.json
+aprobados.json
+ajustados.json
+reframe.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
