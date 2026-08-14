@@ -1,4 +1,4 @@
-# videos-tienda
+﻿# videos-tienda
 
 Skill de Claude Code para convertir material crudo en **Reels / TikToks / Shorts de
 1080x1920** listos para publicar: subtitulos animados palabra por palabra, gancho en
@@ -101,6 +101,7 @@ scripts/
   snap.py                 corta en frontera de frase, no a media palabra
   momentos.py             elige momentos por movimiento y nitidez (material sin voz)
   lote.py                 renderiza decenas de clips desde un plan JSON
+  pantalla_final.py       cierre de marca (imagen suelta, tarjeta o velo)
   make_ass.py             motor de subtitulos animados
   reframe.py              decide el reencuadre 9:16
   render_clip.py          render de un clip vertical
@@ -118,3 +119,4 @@ assets/fonts/             Montserrat, Bangers, Inter (OFL)
 - Tipografias Montserrat, Bangers e Inter bajo licencia OFL (ver `assets/fonts/OFL.txt`)
 
 MIT. Ver [LICENSE](LICENSE).
+

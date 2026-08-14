@@ -171,6 +171,25 @@ Un reel de 5-6 fotos a 2.6 s queda en ~14 s, que es la duracion que mejor retien
 
 ---
 
+## Pantalla final de marca
+
+Cierre que manda a la tienda, con el kit de marca real (no una imitacion con
+tipografia). Genera solo la imagen, o la aplica a un clip o a una carpeta entera:
+
+```
+python "<SKILL>/scripts/pantalla_final.py" clip.mp4 --out final.mp4 --modo tarjeta \
+    --logo "<branding>/wordmark-claro-400.png" --monograma "<branding>/monograma-ML-color-1024.png"
+```
+
+- `--solo-png salida.png` entrega nada mas la imagen, para montarla en otro editor.
+- `--modo tarjeta` agrega ~1.8 s despues del clip; `--modo encima` la dibuja sobre los ultimos segundos y no cambia la duracion.
+- El contenido es una promesa (`--promesa`), una facilidad (`--facilidad`) y la direccion (`--url`). **Nada de cifras de ventas ni testimonios**: solo hechos verificables.
+- Sobre fondo olivo van las variantes **claras** del logo; sobre fondo claro, las de color.
+- Todo queda entre y=260 y y=1440 para que la interfaz de la red no lo tape.
+
+Si los clips ya traen CTA quemado arriba, renderizalos con `--cta ""`: la pantalla
+final lo sustituye y si no, se ven los dos a la vez.
+
 ## Cierre (los tres flujos terminan igual)
 
 ```
