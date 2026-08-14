@@ -127,8 +127,18 @@ y nitidez, no entiende la escena: puede proponer un tramo donde el producto ya s
 cuadro o donde solo se ve el fondo. Descarta esos y quedate con los buenos.
 
 ### 3. Renderizar el lote
-Un `render_clip.py` por momento aprobado, variando el gancho en cada uno para poder
-comparar que angulo retiene mejor.
+Escribe un plan en JSON (un clip por entrada, con su gancho) y renderiza todo junto:
+
+```
+python "<SKILL>/scripts/lote.py" --plan plan.json --salida "./Para publicar" --validar
+```
+
+El plan se guarda en UTF-8, asi que los acentos y los signos de interrogacion llegan
+intactos a los subtitulos — pasarlos como argumento por la consola de Windows los rompe.
+Referencia del formato en el encabezado de `lote.py`.
+
+Varia el gancho entre clips del mismo producto: es la forma barata de descubrir que
+angulo retiene. Ritmo de referencia: 10 clips de 7-8 s se renderizan en ~50 s con NVENC.
 
 ### 4. Exportar y validar (ver "Cierre")
 

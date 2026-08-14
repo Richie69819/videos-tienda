@@ -173,11 +173,14 @@ def cabecera(est: dict, margen_v: int, ancho: int, alto: int) -> list:
         f"Style: cap,{est['fuente']},{est['tam']},{hex_ass(est['color'])},{hex_ass(est['color'])},"
         f"{borde_col},&H80000000,{negrita},0,0,0,100,100,0,0,1,{est['borde']},{est['sombra']},"
         f"2,60,60,{margen_v},1",
-        # Gancho: arriba centrado (alineacion 8)
-        f"Style: hook,{est['fuente']},76,{hex_ass('#FFFFFF')},{hex_ass('#FFFFFF')},"
-        f"{hex_ass('#000000')},&H80000000,-1,0,0,0,100,100,0,0,1,6,0,8,60,60,220,1",
-        f"Style: hook2,{est['fuente']},52,{hex_ass(NARANJA)},{hex_ass(NARANJA)},"
-        f"{hex_ass('#000000')},&H80000000,-1,0,0,0,100,100,0,0,1,5,0,8,60,60,220,1",
+        # Gancho, linea 1: blanca con contorno grueso y sombra. Legible sobre
+        # cualquier fondo, que es lo que pasa en video real (madera, pelo negro, sol).
+        f"Style: hook,{est['fuente']},78,{hex_ass('#FFFFFF')},{hex_ass('#FFFFFF')},"
+        f"{hex_ass('#000000')},&H60000000,-1,0,0,0,100,100,0,0,1,8,3,8,60,60,210,1",
+        # Gancho, linea 2: caja solida olivo con texto crema (BorderStyle 3). El
+        # texto naranja suelto se perdia sobre la madera; la caja no falla nunca.
+        f"Style: hook2,{est['fuente']},50,{hex_ass(CREMA)},{hex_ass(CREMA)},"
+        f"{hex_ass(OLIVO)},{hex_ass(OLIVO)},-1,0,0,0,100,100,0,0,3,13,0,8,60,60,210,1",
         # CTA de marca: arriba, caja solida olivo (BorderStyle 3)
         f"Style: cta,{est['fuente']},58,{hex_ass(CREMA)},{hex_ass(CREMA)},"
         f"{hex_ass(OLIVO)},{hex_ass(OLIVO)},-1,0,0,0,100,100,0,0,3,14,0,8,60,60,240,1",
@@ -255,7 +258,7 @@ def eventos_gancho(gancho: str, duracion: float) -> list:
     fin = min(3.5, max(1.5, duracion * 0.35))
     ev = [dialog(0.15, fin, "hook", "{\\fad(200,250)\\fscx90\\fscy90\\t(0,140,\\fscx100\\fscy100)}" + esc(l1), capa=2)]
     if l2.strip():
-        ev.append(dialog(0.35, fin, "hook2", "{\\fad(260,250)\\pos(540,330)}" + esc(l2.strip()), capa=2))
+        ev.append(dialog(0.35, fin, "hook2", "{\\fad(260,250)\\pos(540,335)}" + esc(l2.strip()), capa=2))
     return ev
 
 
