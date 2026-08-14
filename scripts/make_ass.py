@@ -255,7 +255,9 @@ def eventos_gancho(gancho: str, duracion: float) -> list:
     if not gancho:
         return []
     l1, _, l2 = gancho.partition("|")
-    fin = min(3.5, max(1.5, duracion * 0.35))
+    # En un clip de 5 s un gancho de 1.7 s no da tiempo ni de leerlo: ocupa la
+    # mitad del clip y se retira antes de que entre el CTA.
+    fin = min(3.5, max(2.2, duracion * 0.5))
     ev = [dialog(0.15, fin, "hook", "{\\fad(200,250)\\fscx90\\fscy90\\t(0,140,\\fscx100\\fscy100)}" + esc(l1), capa=2)]
     if l2.strip():
         ev.append(dialog(0.35, fin, "hook2", "{\\fad(260,250)\\pos(540,335)}" + esc(l2.strip()), capa=2))
@@ -265,6 +267,7 @@ def eventos_gancho(gancho: str, duracion: float) -> list:
 def eventos_cta(cta: str, duracion: float, segundos: float = 2.6) -> list:
     if not cta:
         return []
+    segundos = min(segundos, duracion * 0.4)  # en clips cortos no se come la pieza
     ini = max(0.0, duracion - segundos)
     return [dialog(ini, duracion, "cta", "{\\fad(250,0)}" + esc(cta), capa=3)]
 
