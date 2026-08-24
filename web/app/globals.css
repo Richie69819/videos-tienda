@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme(colors.base);
+  color: #ededf2;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fondo con brillo sutil */
+.glow-bg {
+  background:
+    radial-gradient(60% 50% at 50% -10%, rgba(124, 58, 237, 0.28), transparent 70%),
+    radial-gradient(40% 40% at 90% 10%, rgba(211, 255, 77, 0.08), transparent 70%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #c084fc, #f0abfc, #d3ff4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Barras del ecualizador cuando un beat está sonando */
+.eq-bar {
+  transform-origin: bottom;
+  animation: pulseBar 0.9s ease-in-out infinite;
+}
+
+@keyframes pulseBar {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+/* Scrollbar oscura */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a38;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a4a;
+}
