@@ -9,12 +9,13 @@ exportado nada, la clase falló.
 | | |
 |---|---|
 | Clase | 1 de 30 |
+| Módulo | 1 — Los comandos |
 | Título | `Curso de Photoshop desde cero — Clase 1: la interfaz y los 12 atajos que vas a usar siempre` |
 | Duración objetivo | 12:00 |
-| Entrega | `01-portada.jpg`: lienzo 1080x1920 con su producto centrado, bajo 2 MB |
+| Entrega | `01-portada.jpg`: lienzo 1080x1920 con el Funko centrado, bajo 2 MB |
 | Requisitos | ninguno |
 | Dónde se puede hacer | Photopea, completo |
-| Archivos | `clase-01/` con las 6 fotos crudas y el PSD terminado |
+| Archivos de la clase | `material/base/` con las 6 fotos del Funko + el PSD terminado |
 | Atajos nuevos | V, M, L, B, E, T, Ctrl+N, Ctrl+T, Ctrl+Z, Ctrl+0, Ctrl+S, Ctrl+Shift+Alt+W |
 
 ## Miniatura
@@ -22,15 +23,14 @@ exportado nada, la clase falló.
 - Texto: **12 ATAJOS**
 - Color del módulo 1: naranja de marca
 - Qué se ve: un teclado con 12 teclas iluminadas y, al lado, el lienzo vertical
-  terminado.
+  terminado con el Funko centrado.
 
 ## Antes de grabar
 
-- [ ] Photoshop recién reiniciado con **Ventana > Espacio de trabajo > Restablecer
-      Aspectos esenciales**, para que la interfaz se vea como la va a ver el espectador
+- [ ] Photopea limpio, sin proyecto previo, en español, zoom del navegador al 110%
 - [ ] Fuente de teclado en pantalla, abajo a la derecha
-- [ ] Las 6 fotos de la clase en el escritorio, visibles
-- [ ] Una copia del proyecto terminado, por si hay que repetir la toma
+- [ ] `material/base/` abierta en una ventana del explorador, visible, para arrastrar
+- [ ] Una copia del proyecto terminado en `plantillas/`, por si hay que repetir la toma
 
 ---
 
@@ -38,13 +38,21 @@ exportado nada, la clase falló.
 
 ### 0:00-0:15 · Gancho y promesa
 
-> **PANTALLA:** el lienzo vertical terminado, con el producto centrado, y el cuadro de
+> **PANTALLA:** el lienzo vertical terminado, con el Funko centrado, y el cuadro de
 > exportación mostrando "1.4 MB".
 
 > "Al final de este video tienes este archivo hecho por ti, y doce atajos de teclado
 > que vas a usar en las treinta clases que siguen. Son once minutos. Si todavía no
-> tienes Photoshop abierto, entra a photopea.com, que es gratis y te sirve para esta
-> clase completa."
+> tienes Photoshop, entra a photopea.com: es gratis, corre en el navegador y te sirve
+> para esta clase completa."
+
+> **TEXTO EN PANTALLA:** `1080 x 1920 · bajo 2 MB`
+
+> "Y una cosa de entrada, para que sepas en qué te metiste: las treinta clases de este
+> curso las vamos a hacer con esta figura. Un Funko. No porque el curso sea de Funkos
+> —es de Photoshop, desde cero— sino porque un objeto con cara, con brillos y con una
+> forma rara es el peor caso de casi todo lo que vas a querer hacer. Si te sale con
+> esto, te sale con lo que sea."
 
 ### 0:15-2:00 · Teoría: las cinco zonas
 
@@ -67,10 +75,14 @@ exportado nada, la clase falló.
 
 > **ERROR A PROPÓSITO (1:30):** cerrar el panel de Capas de un clic en la X y seguir
 > hablando dos segundos como si nada.
-> "Y ya cerré el panel de capas. Esto te va a pasar hoy mismo. **F7**, o
-> Ventana, Capas, y vuelve. Nada de lo que cierres se pierde: lo que ves en pantalla no
-> es tu archivo, es cómo acomodaste las ventanas. Si todo se desordena,
-> Ventana, Espacio de trabajo, Restablecer, y queda como recién instalado."
+> "Y ya cerré el panel de capas. Esto te va a pasar hoy mismo. **F7**, o Ventana,
+> Capas, y vuelve. Nada de lo que cierres se pierde: lo que ves en pantalla no es tu
+> archivo, es cómo acomodaste las ventanas. Si todo se desordena, Ventana, Espacio de
+> trabajo, Restablecer, y queda como recién instalado."
+
+> **NOTA DE GRABACIÓN:** en Photopea la columna derecha trae un anuncio. Decirlo una
+> vez, sin disculparse: "ese es el anuncio, es el precio de que sea gratis". Y seguir.
+> Si lo ignoras, la mitad de los comentarios van a ser sobre eso.
 
 ### 2:00-3:30 · Los 12 atajos, dichos de corrido
 
@@ -107,8 +119,7 @@ exportado nada, la clase falló.
 
 > "**Ctrl+N**. Aquí es donde se arruinan la mitad de los diseños, así que despacio.
 > Ancho: mil ochenta. Alto: mil novecientos veinte. Píxeles, no centímetros.
-> Resolución: setenta y dos. Modo de color: RGB, ocho bits. Contenido del fondo:
-> blanco."
+> Resolución: setenta y dos. Modo de color: RGB, ocho bits. Fondo: blanco."
 
 > **TEXTO EN PANTALLA:** `1080 x 1920 px · 72 ppp · RGB 8 bits`
 
@@ -122,14 +133,14 @@ exportado nada, la clase falló.
 > solo de vez en cuando. Guarda cada vez que termines un paso; es un reflejo que te va
 > a ahorrar una tarde."
 
-**Paso 2 — Meter la foto.**
+**Paso 2 — Meter la foto del Funko.**
 
-> "Arrastra la foto del producto desde la carpeta al lienzo. Así, directo. Fíjate que
-> entra con un recuadro con nodos: eso es Photoshop preguntándote de qué tamaño la
-> quieres. Arrastra una esquina para que quepa, y **Enter**."
+> "Arrastra `01-mesa.jpg` desde la carpeta al lienzo. Así, directo. Fíjate que entra con
+> un recuadro con nodos: eso es Photoshop preguntándote de qué tamaño la quieres.
+> Arrastra una esquina para que quepa, y **Enter**."
 
-> "Mira el panel de capas: ahora hay dos. El fondo blanco, y tu foto encima. Eso es
-> todo lo que es Photoshop, y la clase dos es nada más de esto."
+> "Mira el panel de capas: ahora hay dos. El fondo blanco, y tu foto encima. Eso es todo
+> lo que es Photoshop, y la clase dos es nada más de esto."
 
 **Paso 3 — Mover y escalar (V y Ctrl+T).**
 
@@ -140,23 +151,28 @@ exportado nada, la clase falló.
 > "**Ctrl+T**, transformar. Ahora puedes escalar desde las esquinas y girar desde
 > afuera. **Enter** para aplicar, **Esc** para cancelar."
 
-> **ERROR A PROPÓSITO:** escalar desde el lado, dejando el producto achatado, y
-> quedarse así tres segundos.
-> "¿Ya viste? Lo aplasté. En las versiones de ahora, arrastrar la esquina mantiene la
-> proporción solo, pero arrastrar **el lado** no: ahí sí deformas. Si alguna vez te sale
-> deformado, **Ctrl+Z**, y usa la esquina. Y si quieres asegurarte, en la barra de
-> opciones hay una cadenita entre el ancho y el alto: con la cadena cerrada, no se
-> deforma nunca."
+> **ERROR A PROPÓSITO:** escalar desde el lado, dejando el Funko achatado, y quedarse
+> así tres segundos.
+> "¿Ya viste lo que hice? Le aplasté la cabeza. Y con un Funko se nota más que con
+> cualquier otra cosa, porque **la cabeza es el personaje**: la proporción de esa bola
+> contra el cuerpito es lo único que hace que esto se lea como un Funko y no como un
+> muñeco cualquiera. Si la achatas, deja de ser lo que es."
+
+> "Qué pasó: arrastrar **la esquina** mantiene la proporción, arrastrar **el lado** no.
+> Si te sale deformado, **Ctrl+Z** y usa la esquina. Y si quieres asegurarte, en la
+> barra de opciones hay una cadenita entre el ancho y el alto: con la cadena cerrada no
+> se deforma nunca. La clase cuatro es entera de esto."
 
 **Paso 4 — Ctrl+0 y la barra espaciadora.**
 
 > "**Ctrl+0**: la imagen completa en la pantalla, como esté el zoom. Este es el atajo
-> que más vas a usar sin darte cuenta. **Alt + rueda** para acercarte a ver un detalle,
-> barra espaciadora apretada para arrastrar, **Ctrl+0** para volver a ver todo."
+> que más vas a usar sin darte cuenta. **Alt + rueda** para acercarte —mira la pintura
+> de la cara, ahí se ve el detalle— barra espaciadora apretada para arrastrar, y
+> **Ctrl+0** para volver a ver todo."
 
 **Paso 5 — Un texto (T).**
 
-> "**T**, clic en el lienzo, escribe el nombre de tu producto. Si sale enorme o
+> "**T**, clic en el lienzo, escribe el nombre de tu figura. Si sale enorme o
 > microscópico, no te pelees: **Ctrl+T** también funciona en el texto. El tamaño, la
 > fuente y el color están en la barra de opciones, arriba, porque ahora la herramienta
 > activa es texto."
@@ -167,12 +183,13 @@ exportado nada, la clase falló.
 
 **Paso 6 — Exportar (Ctrl+Shift+Alt+W).**
 
-> "El PSD es tu archivo de trabajo. Lo que se sube a internet es un JPG, así que hay
-> que exportar."
+> "El PSD es tu archivo de trabajo. Lo que se sube a internet es un JPG, así que hay que
+> exportar."
 
 > "**Ctrl+Shift+Alt+W**, Exportar como. Formato JPG. Calidad: entre setenta y ocho y
 > ochenta y cinco; de ahí para arriba el archivo pesa el doble y se ve igual. Mira abajo
-> a la izquierda, dice el peso: un megabyte cuatro. Perfecto. Exportar."
+> a la izquierda, dice el peso: un megabyte cuatro. Perfecto. Exportar, y le pones
+> `01-portada.jpg`."
 
 > **TEXTO EN PANTALLA:** `JPG · calidad 80 · 1.4 MB`
 
@@ -204,8 +221,9 @@ exportado nada, la clase falló.
 
 ### Cierre (últimos 20 s)
 
-> "Tu reto: sube tu archivo a los comentarios. Tu producto, centrado, vertical. Lo
-> contesto yo."
+> "Tu reto: sube tu archivo a los comentarios. Tu figura, centrada, vertical. Y si no
+> tienes un Funko a mano, descarga mis fotos del comentario fijado y trabaja con las
+> mías. Lo contesto yo."
 
 > "Si esto te sirvió, suscríbete: así te llega la clase de mañana."
 
@@ -219,16 +237,16 @@ exportado nada, la clase falló.
 ## Shorts de esta clase
 
 ```
-SHORT 1: gancho="Tu texto no se cierra|con Enter"          → el Ctrl+Enter, 15 s
-SHORT 2: gancho="Si lo escalas del lado|lo deformas"       → el error del paso 3, 18 s
-SHORT 3: gancho="1080 x 1920, 72 ppp, RGB|apúntalo"        → el Ctrl+N completo, 22 s
+SHORT 1: desde=05:10 hasta=05:28 gancho="Si lo escalas del lado|le aplastas la cabeza"
+SHORT 2: desde=07:40 hasta=07:55 gancho="Tu texto no se cierra|con Enter"
+SHORT 3: desde=03:40 hasta=04:02 gancho="1080 x 1920, 72 ppp, RGB|apúntalo"
 ```
 
 ## Descripción
 
 ```
 Al final de este video tienes tu primer archivo de Photoshop exportado y 12 atajos en
-los dedos. 11 minutos.
+los dedos. 11 minutos. Trabajamos con una figura estilo Funko, las 30 clases.
 
 Fotos y PSD de la clase: [link]
 Lista completa del curso: [link]
@@ -247,12 +265,13 @@ Minutos:
 
 Esta clase se puede hacer completa en Photopea, gratis, desde el navegador.
 
-#photoshop #cursodephotoshop #atajosdeteclado #photopea
+#photoshop #cursodephotoshop #atajosdeteclado #photopea #funko
 ```
 
 ## Comentario fijado
 
 ```
-Fotos de la clase + el PSD terminado: [link]
+Las 6 fotos del Funko con las que trabajamos todo el curso + el PSD terminado: [link]
+Son fotos de celular, sin editar, a propósito. Son las que tienes tú.
 Sube tu archivo aquí cuando lo termines. Lo reviso.
 ```

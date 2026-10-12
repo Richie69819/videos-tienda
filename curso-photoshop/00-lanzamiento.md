@@ -5,22 +5,30 @@ subida no parece un curso**. Nadie empieza algo que puede quedar abandonado en l
 3, y el canal no tiene todavía un historial que diga lo contrario. Todo lo que sigue
 está ordenado para resolver exactamente eso.
 
-## 1. El día 1 se suben 3 videos, no uno
+## 1. El día 1 se suben 6 videos, no uno
 
-Tres, el mismo día, en este orden: **Clase 0 + Clase 1 + Clase 2**.
+Seis, el mismo día, en este orden: **Clase 0 + clases 1, 2, 3, 4 y 5**. Eso es el
+módulo 1 casi completo el día del estreno.
 
-Por qué tres y no uno:
+Por qué seis y no uno:
 
-- Una lista con 3 videos ya se lee como curso. Con uno, se lee como intento.
-- Quien llega a la Clase 1 y le gusta puede seguir en ese momento. Esa segunda vista
-  seguida es la señal más fuerte que le puedes dar a YouTube el primer día, y no la
-  consigues si el siguiente video no existe todavía.
+- Una lista con 6 videos no se lee como intento: se lee como curso que ya existe. Y la
+  duda que mata a un curso nuevo no es "¿será bueno?", es "¿lo van a dejar a medias?".
+  Seis clases contestan eso mejor que cualquier promesa dentro del video.
+- Quien llega a la Clase 1 y le gusta puede seguir **cuatro clases más** en esa misma
+  sentada. Esa cadena de vistas seguidas es la señal más fuerte que le puedes dar a
+  YouTube el primer día, y no la consigues si el siguiente video no existe todavía.
 - La función de **Cursos de YouTube Studio exige mínimo 3 videos** en la lista, sin
-  repetidos y todos del mismo canal. Con tres puedes activarla el día del estreno.
+  repetidos y todos del mismo canal. Con seis la activas de sobra el día del estreno.
+- La clase 3, quitar el fondo, es la que trae desconocidos del buscador. Si cae en el
+  día 1, cae cuando ya hay cinco clases detrás para retenerlos.
 
-La Clase 0 es corta (4 min) y es la que vende; las clases 1 y 2 son las que cumplen.
-Si solo pudieras grabar dos, graba la 0 y la 1 y **retrasa el estreno** hasta tener la
-2. No estrenes con una.
+La Clase 0 es corta (4:30) y es la que vende; las clases 1 a 5 son las que cumplen.
+**La clase 0 se graba al final**, cuando las otras cinco ya existen: así la promesa se
+hace sabiendo qué se cumplió, y se puede decir "ya están arriba" porque de verdad están.
+
+Si el día no alcanza para seis, el mínimo digno es **0, 1, 2 y 3** —la 3 es la que
+busca la gente— y **retrasas el estreno** hasta tenerlas. No estrenes con una.
 
 ## 2. Activar la lista como Curso de YouTube
 
@@ -44,15 +52,22 @@ reordena en la lista, no se vuelve a subir nada.
 
 Dos trabajos distintos y no se mezclan:
 
-**Clases 0, 1 y 2 — las que tiene que encontrar un desconocido buscando.** La palabra
+**Clases 0 a 5 — las que tiene que encontrar un desconocido buscando.** La palabra
 que la gente escribe va al principio, el número después:
 
 ```
 Curso de Photoshop desde cero — Clase 1: la interfaz y los 12 atajos que vas a usar siempre
 Curso de Photoshop desde cero — Clase 2: capas y máscaras explicadas de una vez
+Curso de Photoshop desde cero — Clase 3: quitar el fondo de verdad (lazo, varita y Seleccionar sujeto)
+Curso de Photoshop desde cero — Clase 4: transformar sin deformar (y sin pixelear)
+Curso de Photoshop desde cero — Clase 5: tamaño de imagen vs tamaño de lienzo (el error #1)
 ```
 
-**Clases 3 a 30 — las que ve quien ya está dentro.** Ahí el buscador importa menos y
+De las seis, la 3 es la que más trabaja para el buscador: "quitar el fondo" es una de
+las cosas más buscadas del programa. Esa miniatura y ese título se cuidan más que los
+otros cinco.
+
+**Clases 6 a 30 — las que ve quien ya está dentro.** Ahí el buscador importa menos y
 el problema concreto importa más:
 
 ```
@@ -138,12 +153,14 @@ te cuesta más de lo que te da.
 
 | Día | Qué sube |
 |---|---|
-| 1 | Clases 0, 1 y 2 + 1 Short |
-| 2-8 | Una clase por día (3 a 7) + 1 Short diario |
-| 9 en adelante | Dos clases por semana, días fijos, + 3 Shorts por semana |
+| 1 | Clases 0, 1, 2, 3, 4 y 5 + 1 Short |
+| 2-3 | Clases 6 y 7, que cierran el módulo 1, + 1 Short diario |
+| 4 en adelante | Dos clases por semana, días fijos, + 3 Shorts por semana |
 
-El módulo 1 completo en la primera semana es lo que mata la duda de "esto lo van a
-dejar a medias". Después ya puedes bajar el ritmo, pero **los días fijos no se
+El módulo 1 completo en los primeros tres días es lo que mata la duda de "esto lo van a
+dejar a medias". Con seis clases el día 1 el riesgo cambia de lugar: ya no es parecer
+abandonado, es quemarse. No prometas en la clase 0 una cadencia que no vas a aguantar;
+promete la que sí. Después ya puedes bajar el ritmo, pero **los días fijos no se
 mueven**: un curso que se publica martes y viernes es un curso; uno que publica cuando
 se puede es un canal.
 

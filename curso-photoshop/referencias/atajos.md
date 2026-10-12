@@ -37,7 +37,7 @@ la clase.
 | 2 | Ctrl+J, Ctrl+G, Ctrl+Shift+N, F7, Alt+clic en el ojo, X, D, Ctrl+D |
 | 3 | W (selección rápida), Shift+arrastrar (sumar), Alt+arrastrar (restar), Ctrl+Shift+I (invertir), Ctrl+clic en miniatura |
 | 4 | Ctrl+T con Shift y Alt, Ctrl+Shift+T (repetir transformación), Esc |
-| 5 | Ctrl+Alt+I (tamaño de imagen), Ctrl+Alt+C (tamaño de lienzo) |
+| 5 | Ctrl+Alt+I (tamaño de imagen), Ctrl+Alt+C (tamaño de lienzo), C (recortar) |
 | 6 | `[` y `]` (tamaño del pincel), Shift+`[` y Shift+`]` (dureza), Alt (cuentagotas temporal) |
 | 7 | Ctrl+Shift+S (guardar como), Ctrl+W (cerrar) |
 | 8 | Ctrl+Alt+R (seleccionar y aplicar máscara), Ctrl+Shift+Alt+E (copia combinada en capa nueva) |
@@ -51,6 +51,23 @@ la clase.
 | 18 | Ctrl+K (preferencias), Ctrl+R (reglas), Ctrl+; (guías) |
 | 22 | F2 a F12 asignados a acciones propias |
 | 27 | Ctrl+Alt+Shift+K (ver todos los atajos y reasignarlos) |
+
+## Lo que cambia entre versiones (y hay que decir en cámara)
+
+El curso se graba en **Photopea**, y el espectador puede tener Photopea, un Photoshop de
+hoy o un CS6 viejo. Cuatro cosas se comportan distinto y todas salen en el módulo 1, así
+que se dicen de frente en una línea y se sigue. Callarlas llena los comentarios.
+
+| Qué | Photopea y Photoshop de hoy | Photoshop CS6 |
+|---|---|---|
+| **Ctrl+T, arrastrar la esquina** | mantiene la proporción; Shift la libera | **deforma**; hay que apretar Shift para que no |
+| **Perfeccionar el borde de una selección** | `Seleccionar y aplicar máscara` | `Perfeccionar borde`, en otro lugar del menú |
+| **Seleccionar sujeto** (clase 3) | sí existe | **no existe**: toca varita + lazo |
+| **Exportar** | `Exportar como` (Ctrl+Shift+Alt+W) | `Guardar para Web` (Ctrl+Shift+Alt+S) |
+
+La salida fácil para la primera: **la cadenita de la barra de opciones**. Con la cadena
+cerrada no se deforma en ninguna versión, y el espectador no tiene que acordarse de cuál
+tiene. Eso es lo que se enseña; lo demás es la nota al pie.
 
 ## El método para que se queden
 

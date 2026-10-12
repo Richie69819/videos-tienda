@@ -1,18 +1,26 @@
-# Curso de Photoshop para vender — plan del curso
+# Curso de Photoshop desde cero — plan del curso
 
 Curso gratuito en YouTube, 30 clases, de abrir el programa por primera vez a generar
-200 imágenes de producto sin tocar el ratón.
+200 imágenes sin tocar el ratón.
 
 **La diferencia con los otros cursos de Photoshop de YouTube:** aquí no se enseña
-Photoshop. Se enseña a resolver los seis problemas que tiene cualquiera que vende algo
-en línea —foto de producto, fondo blanco, miniatura, etiqueta, mockup, 200 variantes
-del mismo diseño— y Photoshop es la herramienta con la que se resuelven. Cada clase
-termina con un archivo que se publica. Ninguna clase termina con "y aquí ven que esta
-herramienta hace este efecto".
+Photoshop en abstracto. Las 30 clases se trabajan **con la misma figura estilo Funko**,
+y Photoshop es la herramienta con la que se resuelve lo que esa figura necesita: el
+recorte, el fondo, la sombra, el color, la ficha, la miniatura, la caja para imprenta y
+las 200 variantes cuando ya hay catálogo. Cada clase termina con un archivo exportado.
+Ninguna clase termina con "y aquí ven que esta herramienta hace este efecto".
+
+**Por qué una figura y no una foto de ejemplo cualquiera:** porque es el peor caso de
+casi todo. Cabeza redonda (ahí se ve cualquier deformación), brillos de plástico (ahí
+se rompen los recortes), hueco entre el brazo y el cuerpo (ahí fallan las selecciones
+automáticas) y una cara (ahí el ojo humano revisa más duro). Si le sale con eso, le
+sale con lo que sea. Y de paso el curso lo graba alguien trabajando en lo suyo, que se
+nota y se cree.
 
 Eso es también lo que lo hace atractivo desde el día 1: el espectador no viene a
-aprender un programa, viene a tener la foto lista. El plan de lanzamiento está en
-[`00-lanzamiento.md`](00-lanzamiento.md).
+aprender un programa, viene a ver cómo se hace eso. El plan de lanzamiento está en
+[`00-lanzamiento.md`](00-lanzamiento.md), y lo que hay que hacer **hoy**, paso a paso,
+en [`hoja-de-rodaje-dia-1.md`](hoja-de-rodaje-dia-1.md).
 
 ## Las reglas del curso
 
@@ -61,18 +69,18 @@ Duraciones objetivo. Si una clase se pasa 4 minutos del objetivo, se parte en do
 
 | # | Clase | Dur | Te llevas |
 |---|---|---|---|
-| 0 | Lo que vas a poder hacer en 30 clases | 4 min | Photoshop abierto, gratis y legal |
+| 0 | Lo que vas a poder hacer en 30 clases | 4:30 | Photoshop abierto, gratis y legal |
 
 ### Módulo 1 — Los comandos (gratis)
 
 | # | Clase | Dur | Te llevas |
 |---|---|---|---|
-| 1 | Interfaz y los 12 atajos que son el 90% del trabajo | 12 min | Lienzo 1080x1920 con tu producto centrado, exportado bajo 2 MB |
-| 2 | Capas y máscaras: el único concepto que importa | 14 min | Portada de reel con producto + texto + logo en 3 capas |
-| 3 | Selecciones: lazo, varita y Seleccionar sujeto | 13 min | Tu producto recortado del fondo |
-| 4 | Transformar sin deformar | 11 min | El mismo producto en 3 tamaños sin pixelear |
-| 5 | Tamaño de imagen vs tamaño de lienzo (el error #1) | 10 min | Una foto 2000x2000 para la tienda y la misma en 1080x1920 para reel |
-| 6 | Pincel, borrador y el truco de borrar sin borrar | 12 min | 3 fotos de producto limpias |
+| 1 | Interfaz y los 12 atajos que son el 90% del trabajo | 12 min | Lienzo 1080x1920 con la figura centrada, exportado bajo 2 MB |
+| 2 | Capas y máscaras: el único concepto que importa | 14 min | Ficha con la figura + nombre + número + logo en capas separadas |
+| 3 | Selecciones: lazo, varita y Seleccionar sujeto | 13 min | `03-figura-recortada.png`, con fondo transparente |
+| 4 | Transformar sin deformar | 11 min | La misma figura en 3 tamaños, sin deformar ni pixelear |
+| 5 | Tamaño de imagen vs tamaño de lienzo (el error #1) | 10 min | 2000x2000 para tienda y 1080x1920 para reel, del mismo archivo |
+| 6 | Pincel, borrador y el truco de borrar sin borrar | 12 min | 3 fotos de la figura limpias |
 | 7 | Guardar y exportar: PSD, JPG, PNG, WebP | 10 min | El mismo diseño en los 4 formatos, con sus pesos comparados |
 
 ### Módulo 2 — Foto de producto que vende
@@ -82,22 +90,22 @@ Duraciones objetivo. Si una clase se pasa 4 minutos del objetivo, se parte en do
 | 8 | Fondo blanco real: bordes, pelo y plástico translúcido | 15 min | Foto que pasa el filtro de cualquier marketplace |
 | 9 | Sombra que no parece pegada: contacto, caída y reflejo | 14 min | La misma foto con sombra creíble |
 | 10 | Color: niveles, curvas y por qué tu naranja se ve lavado | 15 min | Las 3 fotos con el color de marca igualado |
-| 11 | Quitar lo que estorba: Tampón, Parche, Eliminar | 13 min | Mesa sin cables, pieza sin hilos de impresión |
+| 11 | Quitar lo que estorba: Tampón, Parche, Eliminar | 13 min | Mesa sin cables, figura sin rayones ni brillos de más |
 | 12 | Camera Raw como filtro: la base de toda foto de celular (escritorio) | 14 min | Preajuste propio aplicable a todo lo que grabes |
-| 13 | Enfoque y ruido: que se vea la textura de la pieza | 11 min | Macro del PETG que aguanta zoom |
-| 14 | Producto sobre fondo de marca, en 3 variantes | 14 min | 3 fotos listas para la ficha del producto |
+| 13 | Enfoque y ruido: que se vea la textura de la pieza | 11 min | Macro de la pintura de la cara que aguanta zoom |
+| 14 | La figura sobre fondo de marca, en 3 variantes | 14 min | 3 fotos listas para la ficha del producto |
 
 ### Módulo 3 — Lo que la gente ve antes de leer
 
 | # | Clase | Dur | Te llevas |
 |---|---|---|---|
-| 15 | Texto: jerarquía, tracking y por qué no se lee en el celular | 13 min | Tus 4 textos de ficha legibles a tamaño real |
+| 15 | Texto: jerarquía, tracking y por qué el nombre no cabe | 13 min | Los 4 textos de la ficha legibles a tamaño real |
 | 16 | Formas vectoriales y el logo que nunca pixelea | 12 min | Tu logo en SVG + PNG en 5 tamaños |
 | 17 | Objetos inteligentes: el concepto que ahorra 10 horas al mes | 14 min | Plantilla donde cambias una foto y se actualizan 6 piezas |
 | 18 | La miniatura de este curso, hecha en vivo | 16 min | Plantilla 1280x720 bajo 2 MB, con tu sistema de color |
-| 19 | Etiqueta y sticker para imprenta: CMYK, sangrado, 300 ppp (escritorio) | 15 min | PDF que la imprenta acepta sin regresártelo |
-| 20 | Mockup: tu diseño sobre el empaque real | 14 min | Foto de empaque sin haber empacado nada |
-| 21 | Plantilla maestra: un PSD que escupe los 6 formatos de la tienda | 15 min | El PSD maestro |
+| 19 | La caja para imprenta: CMYK, sangrado, 300 ppp y marcas de corte (escritorio) | 15 min | PDF que la imprenta acepta sin regresártelo |
+| 20 | Mockup: tu diseño sobre la caja real | 14 min | Foto de la caja sin haber impreso nada |
+| 21 | Plantilla maestra: un PSD que escupe los 6 formatos | 15 min | El PSD maestro |
 
 ### Módulo 4 — Automatización (Photoshop de paga)
 
@@ -124,19 +132,32 @@ Total: unas 6 h 30 min de clase.
 
 ```
 README.md                         este plan
+hoja-de-rodaje-dia-1.md           QUÉ HACER HOY, paso a paso, para grabar 6 clases
 00-lanzamiento.md                 el plan de subida: títulos, miniaturas, cadencia, Cursos de YouTube
 guiones/
   _plantilla.md                   molde de guion, con los tiempos y las marcas de pantalla
   clase-00-promesa.md             guion completo del video 0 (el que vende el curso)
   clase-01-interfaz-atajos.md     guion completo
   clase-02-capas-mascaras.md      guion completo
-  shorts-lanzamiento.md           3 Shorts del día 1 + el plan JSON para lote.py
+  clase-03-selecciones.md         guion completo
+  clase-04-transformar.md         guion completo
+  clase-05-imagen-vs-lienzo.md    guion completo
+  shorts-lanzamiento.md           Shorts del día 1 + el plan JSON para lote.py
 referencias/
   acceso-legal.md                 cómo abrir Photoshop sin pagar y cuándo ya no se puede
   atajos.md                       la chuleta: qué atajo se enseña en qué clase
   automatizacion.md               el módulo 4 a detalle, con rutas de menú exactas
   miniaturas.md                   el sistema de miniaturas del curso
   metricas.md                     qué medir y qué decidir con cada número
+```
+
+Y en la carpeta de trabajo (`Desktop\Curso Photoshop`), además:
+
+```
+material/base/                    las 6 fotos de la figura, crudas. El material de las 30 clases
+plantillas/                       los PSD terminados de cada clase, para poder repetir toma
+entregas/                         lo que se exporta en cada clase (es lo que va al comentario fijado)
+grabaciones/                      la salida de OBS
 ```
 
 ## Cómo se produce cada clase
@@ -146,8 +167,13 @@ producción de la clase es:
 
 1. Escribir el guion desde `guiones/_plantilla.md`. **Nunca grabar sin guion**: el
    silencio pensando es lo que hace que la gente se vaya.
-2. Grabar pantalla a 1920x1080, 30 fps, con el programa en **español** y la barra de
-   atajos visible (OBS: fuente de teclado en la esquina).
+2. Grabar pantalla a 1920x1080, 30 fps, **en Photopea**, en español, con la barra de
+   atajos visible (OBS: fuente de entrada de teclado en la esquina). Por qué en Photopea
+   y no en Photoshop: el único Photoshop de esta máquina es un CS6 portable que abre
+   como administrador, y OBS no engancha una ventana elevada ni ve las teclas que se
+   teclean en ella; además CS6 no tiene *Seleccionar sujeto*, que la clase 3 necesita.
+   Grabar en Photopea tiene además la ventaja de que lo que se ve en pantalla es
+   exactamente lo que el espectador tiene abierto.
 3. Subir la clase larga a YouTube.
 4. Sacar 3 Shorts verticales de esa misma clase con el pipeline del repo:
    `momentos.py` no sirve aquí (es material de pantalla, no de movimiento), así que se
