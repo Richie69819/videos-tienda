@@ -127,9 +127,10 @@ Minutos:
 00:15 [tema]
 ...
 
-Lo que uso: Photoshop [versión] en Windows. Las primeras 21 clases se pueden hacer
-gratis en Photopea; desde la clase 22 hace falta Photoshop de escritorio porque la
-automatización no existe en las alternativas. Explicado en la clase 0.
+Lo que uso: Photoshop de escritorio en Windows, en español. De la clase 7 en adelante
+(revelado) y de la 13 en adelante (acciones, lotes, variables) hace falta Photoshop de
+escritorio: no hay alternativa gratuita que haga esto. Los tres caminos —prueba de 7
+días, licencia, o solo ver el curso— están explicados en la clase 0.
 
 #photoshop #cursodephotoshop #fotodeproducto
 ```

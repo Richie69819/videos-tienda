@@ -1,4 +1,9 @@
-# Módulo 4 a detalle — la automatización
+# Los módulos 3 y 5 a detalle — la automatización
+
+La automatización está partida en dos: el **módulo 3** (clases 13 a 15) llega a la mitad
+del curso, cuando al alumno ya le dolió repetir seis fotos a mano, y enseña lo que resuelve
+el noventa por ciento de la repetición. El **módulo 5** (clases 23 a 27) es lo que ya pide
+un archivo alimentado por datos.
 
 Este módulo es la razón de ser del curso. Todo lo anterior lo enseñan cien canales;
 esto lo enseñan muy pocos en español, y es lo único que de verdad cambia cuánto tiempo
@@ -7,12 +12,12 @@ le toma a alguien atender su tienda.
 Rutas de menú con la interfaz **en español**. Entre paréntesis, el nombre en inglés,
 porque la mitad de los tutoriales que el espectador va a encontrar después están así.
 
-Todo este módulo necesita **Photoshop de escritorio**. Photopea tiene panel de Acciones
+Todo esto necesita **Photoshop de escritorio**, y es la razón de la licencia. Acciones
 y carga `.atn`, pero no tiene Lote por carpetas, ni Droplets, ni Variables.
 
 ---
 
-## Clase 22 — Acciones
+## Clase 13 — Acciones
 
 `Ventana > Acciones` (Window > Actions), **Alt+F9**.
 
@@ -61,7 +66,11 @@ previenen metiendo al principio de la acción `Imagen > Modo > Color RGB` y 8 bi
 
 ---
 
-## Clase 23 — Lote y Droplet
+## Clases 14 y 15 — Lote, Procesador y Droplet
+
+Esto era una sola clase y se partió en dos: la **14** es Procesador de imágenes y Lote
+(dentro de Photoshop), y la **15** es el Droplet (el icono del escritorio). El contenido de
+abajo sirve para las dos; el corte va donde empieza *Droplet*.
 
 ### Lote
 
@@ -97,7 +106,7 @@ en diez segundos, no se repara.
 
 ---
 
-## Clase 24 — Procesador de imágenes
+## Clase 14 (segunda mitad) — Procesador de imágenes
 
 `Archivo > Secuencias de comandos > Procesador de imágenes` (File > Scripts > Image
 Processor).
@@ -115,7 +124,7 @@ formato. No hay que crearlas antes.
 
 ---
 
-## Clase 25 — Variables y conjuntos de datos I
+## Clase 23 — Variables y conjuntos de datos I
 
 Aquí es donde el espectador se queda con la boca abierta, así que el orden importa:
 primero el resultado, luego el cómo.
@@ -191,7 +200,7 @@ final.
 
 ---
 
-## Clase 26 — Variables II: las miniaturas del curso
+## Clase 24 — Variables II: las miniaturas del curso
 
 La clase donde el curso se ilustra a sí mismo: se generan **las 30 miniaturas de este
 curso** desde un CSV, en vivo, con la plantilla de la clase 18. El CSV y el detalle de
@@ -202,7 +211,7 @@ miniaturas al entrar a la lista.
 
 ---
 
-## Clase 27 — Scripts `.jsx`
+## Clases 25 y 26 — Scripts `.jsx`
 
 Cuándo una acción ya no alcanza: cuando hay que **decidir** algo (si la foto es vertical
 haz esto, si no, lo otro), cuando hay que **recorrer** una lista, o cuando hay que leer
@@ -269,7 +278,7 @@ la relación esfuerzo/resultado más alta. Decirlo así, en una frase, y seguir.
 
 ---
 
-## Clase 28 — De Photoshop al reel
+## Clase 27 — Imposición, y la salida hacia el reel
 
 El cierre del módulo y lo que conecta el curso con el resto del canal: la carpeta que
 sale de Photoshop entra directo al pipeline de video de este repositorio.

@@ -39,7 +39,8 @@ temprano y más concreto ("sube tu foto con fondo blanco", no "cuéntame qué ta
 
 - **Si el módulo 1 retiene y el 2 no:** las clases son demasiado largas. Partir en dos
   las que pasan de 15 minutos.
-- **Si la clase 22 (la de pagar) se cae:** no es el precio, es que se dijo tarde.
+- **Si la clase 13 (la primera de automatización) se cae:** no es el tema, es que llegó
+  antes de que doliera repetir. Se arregla en el gancho, no en el contenido.
   Reforzar en la clase 0 y en la 21 que el módulo 4 pide escritorio, y recordar el
   consejo de guardar la prueba de 7 días para ese momento.
 - **Si un Short explota y la clase no:** el Short mandaba a la descripción, no al canal.
