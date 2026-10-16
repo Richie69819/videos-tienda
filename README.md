@@ -110,7 +110,16 @@ scripts/
   validate.py             revision final antes de subir
   creatomate_render.py    motor en la nube (REST, sin SDK)
 assets/fonts/             Montserrat, Bangers, Inter (OFL)
+curso-photoshop/          curso gratuito de Photoshop en YouTube (guiones y plan)
 ```
+
+## Curso de Photoshop en YouTube
+
+`curso-photoshop/` lleva el plan completo de un curso gratuito de 30 clases, de abrir
+el programa a generar 200 imagenes de producto sin tocar el raton: la malla, el plan de
+lanzamiento, los guiones clase por clase y las referencias de automatizacion. Los
+Shorts de cada clase se renderizan con los mismos scripts de este repo (`lote.py` y
+`export.py`). Empieza en [curso-photoshop/README.md](curso-photoshop/README.md).
 
 ## Creditos
 
