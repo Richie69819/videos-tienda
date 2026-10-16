@@ -1,74 +1,80 @@
 # Curso de Photoshop — empieza aquí
 
-## 1. Los guiones
+**8 clases + presentación. 66 minutos de guión.** Está todo en `guiones`, en Word y PDF.
 
-Están en la carpeta `guiones`, en **Word y en PDF**. El Word es por si quieres cambiarle
-algo; el PDF es para imprimir o leer en el segundo monitor mientras grabas.
-
-Se graban **en este orden**:
+## Los guiones, en orden de grabación
 
 | Orden | Archivo | Dura |
 |---|---|---|
-| 1º | `Clase 01 - Interfaz y 12 atajos` | 13 min |
-| 2º | `Clase 02 - Capas y mascaras` | 14 min |
-| 3º | `Clase 03 - Selecciones` | 14 min |
-| 4º | `Clase 04 - Transformar` | 12 min |
-| 5º | `Clase 05 - Imagen contra lienzo` | 11 min |
-| 6º | `Clase 00 - Presentacion del curso` | 4:30 |
+| 1º | `01 - La pantalla y los 7 atajos` | 8 min |
+| 2º | `02 - Capas y mascaras` | 9 min |
+| 3º | `03 - Recortar la figura` | 8 min |
+| 4º | `04 - Escalar sin deformar` | 7 min |
+| 5º | `05 - El texto de la caja` | 7 min |
+| 6º | `06 - Armar la caja` | 9 min |
+| 7º | `07 - El PDF para la imprenta` | 7 min |
+| 8º | `08 - Que Photoshop lo haga solo` | 9 min |
+| 9º | `00 - Presentacion` | 2 min |
 
-**La clase 0 va al final.** Es la que promete, y se promete cuando ya cumpliste.
+**La presentación se graba al final.** Es la que promete, y se promete cuando ya cumpliste.
 
-## 2. Cómo está armado cada guión
+El PDF es para imprimir o leer en el segundo monitor. El Word es por si quieres cambiarle
+algo.
 
-Cada clase va partida en **partes numeradas** (PARTE 1, PARTE 2…), no en minutos. Dentro
-de cada parte:
+## Cómo se lee un guión
 
-- **LO QUE HACES EN PANTALLA** — los clics, en orden.
-- **LO QUE DICES** — el texto hablado, en recuadro con una línea azul al lado. Lo lees tal
-  cual o lo dices con tus palabras, pero el orden no se cambia.
-- **NOTA PARA TI** — en gris. Eso nunca se dice en voz alta.
+Cada clase va en **partes numeradas**, y dentro de cada parte:
 
-Al final de cada documento, después de un salto de página, están las notas de producción:
-la ficha, la miniatura, los Shorts que salen de esa grabación y los capítulos para la
-descripción de YouTube.
+- **LO QUE HACES EN PANTALLA** (naranja) — los clics, en orden.
+- **LO QUE DICES** (azul, en recuadro, letra grande) — el texto hablado. Es lo único que se
+  lee en voz alta.
+- **NOTA PARA TI** (gris) — nunca se dice.
+- **RELOJ** (rojo) — en qué minuto deberías ir al terminar esa parte. **Graba con
+  cronómetro a la vista.** Si llegas a una marca dos minutos arriba, no te falta contenido:
+  te alargaste atrás. Corta y sigue.
 
-## 3. Lo que necesitas tener
+Las notas de producción (título, entrega, miniatura, Shorts) van al final del documento,
+después de un salto de página.
 
-Dos archivos de tu muñeco, en la carpeta `material`. Está explicado ahí mismo en
-[`material\LEEME - que archivos van aqui.md`](material/LEEME%20-%20que%20archivos%20van%20aqui.md).
+## Lo que necesitas tener antes de grabar
 
-## 4. Las carpetas
+| Archivo | Qué es | Lo usan |
+|---|---|---|
+| `material\figura-con-fondo.jpg` | Tu figura **antes** de recortarse | clases 1, 2 y 3 |
+| `material\figura.png` | La misma **ya recortada** | clases 4, 5 y 6 |
+| `plantillas\plantilla-caja.psd` | Tu plantilla de caja, con tu marca, limpia | clases 6, 7 y 8 |
+
+Si solo tienes la figura ya recortada, dímelo y te genero la versión con fondo. Sin fondo
+que quitar, las clases 2 y 3 no se pueden grabar.
+
+## Las carpetas
 
 | Carpeta | Qué va aquí |
 |---|---|
-| `guiones` | Los 6 guiones en Word y PDF |
-| `guiones\_respaldo md` | Las versiones viejas en texto. No las necesitas |
-| `material` | Los archivos del muñeco |
-| `plantillas` | Los PSD terminados de cada clase, para poder repetir una toma sin rehacer el trabajo |
-| `entregas` | Lo que exportas en cada clase. Es lo que sube al comentario fijado |
+| `guiones` | Los 9 guiones en Word y PDF |
+| `guiones\_version larga (30 clases)` | El plan anterior, archivado. No se graba |
+| `guiones\_respaldo md` | Versiones viejas en texto. No las necesitas |
+| `material` | Los archivos de la figura |
+| `plantillas` | La plantilla de caja y los PSD terminados de cada clase |
+| `entregas` | Lo que exportas en cada clase |
 | `grabaciones` | La salida de OBS |
-| `_generador` | Los scripts que generan los Word. Si cambias un guión, aquí se vuelve a generar |
+| `_generador` | Los scripts que generan los Word |
 
-## 5. Lo demás
+## Lo demás
 
-| Archivo | Qué es | Cuándo se lee |
-|---|---|---|
-| `README.md` | El plan de las 30 clases | cuando quieras ver hacia dónde va |
-| `hoja-de-rodaje-dia-1.md` | El orden del día y el reloj | hoy, al arrancar |
-| `00-lanzamiento.md` | Títulos, miniaturas, cadencia, cómo activar la lista como Curso | al subir |
-| `referencias\la-licencia.md` | Qué desbloquea la licencia, y qué se dice en cámara | antes de grabar la clase 0 |
-| `referencias\atajos.md` | Qué atajo se enseña en qué clase | al escribir las clases 6 a 30 |
-| `referencias\miniaturas.md` | El sistema de miniaturas | al hacer las 6 miniaturas |
-| `referencias\automatizacion.md` | Los bloques de automatización a detalle | antes de la clase 13 |
-| `referencias\metricas.md` | Qué mirar la primera semana | la semana que viene |
+| Archivo | Qué es |
+|---|---|
+| `README.md` | El plan: las 8 clases y por qué son 8 |
+| `00-lanzamiento.md` | Títulos, miniaturas y cómo activar la lista como Curso de YouTube |
+| `referencias\la-licencia.md` | Qué se dice en cámara sobre lo que cuesta Photoshop |
+| `referencias\miniaturas.md` | El sistema de miniaturas |
 
-## Las cuatro reglas que no se negocian
+## Las cuatro reglas
 
-1. **Nunca grabar sin el guión abierto.** El silencio pensando es lo que hace que la gente
-   se vaya.
-2. **Los errores se dejan dentro** y se arreglan en pantalla. Cada guión trae marcados los
-   errores a propósito; ésos no se cortan.
-3. **Hoy se graba, no se edita.** Editar hoy es la forma más segura de acabar con dos
-   clases en vez de seis.
-4. **El CS6 portable no se abre, ni aparece en pantalla en ninguna clase.** El curso se
-   graba en el Photoshop con licencia y nada más.
+1. **Nunca grabar sin el guión abierto.**
+2. **Los errores se dejan dentro** y se arreglan en pantalla. Los que vienen marcados en el
+   guión son a propósito; ésos no se cortan.
+3. **Se graba, no se edita.** Editar el mismo día es la forma más segura de acabar con dos
+   clases en vez de ocho.
+4. **El CS6 portable no se abre ni aparece en pantalla.** El curso se graba en el Photoshop
+   con licencia.
